@@ -1,6 +1,7 @@
 {
-  "name": "dojo-blog",
+  "name": "misb7a",
   "version": "0.1.0",
+  "homepage": "https://omaryasirr.github.io/misb7a_react",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
