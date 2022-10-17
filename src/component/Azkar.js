@@ -51,7 +51,7 @@ const Azkar = ({
               <div>
                 <span
                   onClick={() => {
-                    deleteHandler(i);
+                    deleteHandler(i)
                   }}
                 >
                   <MdDelete />
