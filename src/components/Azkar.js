@@ -32,7 +32,7 @@ const Azkar = ({
   useEffect(() => {
     azkarArr.length === index && setIndex(azkarArr.length - 1);
     setAzkarArr(JSON.parse(window.localStorage.getItem("azkar")));
-  }, [azkarArr.length]);
+  },[index, setAzkarArr, azkarArr.length, setIndex]);
 
   return (
     <div className="azkar">
@@ -40,7 +40,7 @@ const Azkar = ({
         <h3>قائمة اذكاري</h3>
         {azkarArr.map((item, i) => {
           return (
-            <div className={i == index ? "zikr active" : "zikr"} key={i}>
+            <div className={i === index ? "zikr active" : "zikr"} key={i}>
               <div
                 onClick={() => {
                   setIndex(i);
@@ -51,7 +51,7 @@ const Azkar = ({
               <div>
                 <span
                   onClick={() => {
-                    deleteHandler(i);
+                    deleteHandler(i)
                   }}
                 >
                   <MdDelete />

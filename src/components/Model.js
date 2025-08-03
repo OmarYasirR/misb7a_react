@@ -21,6 +21,7 @@ function Model({
   }
   const [zkErr, setzkErr] = useState(false);
   const [adErr, setadErr] = useState(false);
+  const haveZikr = localStorage.getItem('azkar')
   
   return (
     <div className="model">
@@ -55,7 +56,7 @@ function Model({
           onChange={(e) => setFyda(e.target.value)}
         ></textarea>
         <button type="submit">{edit? 'تعديل' : 'اضافه'}</button>
-        <button onClick={() => hideModel()}>الغاء</button>
+        <button disabled={!haveZikr} onClick={() => hideModel()}>الغاء</button>
       </form>
     </div>
   );

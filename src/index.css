@@ -32,6 +32,7 @@ header .cont .icon{
   height: 100%;
   z-index: 3;
   background: #00000061;
+  margin: 0 15px;
 }
 form {
   padding: 20px;
@@ -89,6 +90,10 @@ form button {
   margin-top: 5px;
   cursor: pointer;
   color: white;
+}
+form button:disabled {
+  background: #ffeb3b2e;
+  cursor: not-allowed;
 }
 form button:nth-of-type(2) {
   float: left;
