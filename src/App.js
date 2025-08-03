@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Azkar from "./component/Azkar";
-import Messege from "./component/Messege";
-import Misb7a from "./component/Misb7a";
-import Model from "./component/Model";
+import Azkar from "./components/Azkar";
+import Messege from "./components/Messege";
+import Misb7a from "./components/Misb7a";
+import Model from "./components/Model";
 import { AiTwotoneSetting } from "react-icons/ai";
 import {BsInfoCircleFill } from "react-icons/bs";
 import { IoArrowForward } from "react-icons/io5";
@@ -12,7 +12,7 @@ function App() {
   const [addad, setAddad] = useState("");
   const [zikr, setZikr] = useState("");
   const [fyda, setFyda] = useState("");
-  const [dwrat, setHabat] = useState('');
+  // const [dwrat, setHabat] = useState('');
   const [azkarArr, setAzkarArr] = useState([]);
   const [index, setIndex] = useState(0);
   const [showAzkar, setShowAzkar] = useState(false);
@@ -73,9 +73,9 @@ function App() {
         return value = true
       }
     });
-    let handler;
+    // let handler;
     // clearTimeout(handler)
-    handler = setTimeout(() => setshowMessege(false), 3000);
+    setTimeout(() => setshowMessege(false), 3000);
     setZikr("");
     setAddad("");
     setFyda("");
