@@ -32,12 +32,11 @@ header .cont .icon{
   height: 100%;
   z-index: 3;
   background: #00000061;
-  margin: 0 15px;
 }
 form {
   padding: 20px;
   width: 500px;
-  max-width: 100%;
+  max-width: 92%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -138,19 +137,12 @@ form textarea {
   cursor: pointer;
 }
 .container .add {
-  border-radius: 50%;
-  background: #eb6b56;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 35px;
-  font-weight: bolder;
   cursor: pointer;
   position: absolute;
   bottom: 10vmin;
   right: 10vmin;
+  color: #000000;
 }
 .azkar{
   background: #eb6b56;
