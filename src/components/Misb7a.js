@@ -1,4 +1,6 @@
 import { useState, useReducer } from "react";
+import { BiSolidMessageSquareAdd } from "react-icons/bi";
+
 
 const Misb7a = ({ setshowModel, index, azkarArr, setAzkarArr }) => {
   const [currntZikr, setCurrntZikr] = useState(azkarArr[index]);
@@ -64,7 +66,7 @@ const Misb7a = ({ setshowModel, index, azkarArr, setAzkarArr }) => {
             }}
           ></div>
           <div className="add" onClick={() => setshowModel(true)}>
-            +
+              <BiSolidMessageSquareAdd />
           </div>
         </div>
       )}
